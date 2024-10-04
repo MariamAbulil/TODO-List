@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TODO LIST</title>
+</head>
+
+<body>
+    <div class="crud">
+        <div class="head">TODO List</div>
+        <div class="inputs">
+            <!-- <input id="add" type="text>" placeholder="Add new task...."> -->
+             <label style="margin: 10px; display: block;font-weight: bold;" >Add new task....</label>
+            <div class="cover">
+                <input  id="desc" type="text" placeholder="TODO Description">
+                <input  id="userId" type="text" placeholder="User ID">
+                <input  id="status1" type="text" placeholder="Status">
+            
+            
+
+            </div>
+            <button id="btn">Add</button>
+        </div>
+        <br>
+        <div class="outputs">
+            <input type="text" class="search" placeholder="Sarch tasks...">
+            <br>
+            <br>
+            <table class="table"> 
+                <thead>
+                    <tr class="firstLine">
+                        <th>id</th>
+                        <th>TODO Description</th>
+                        <th>User ID</th>
+                        <th>Status</th>
+                        <th colspan="2">Actions</th>
+                    </tr>
+                </thead>
+              
+                <tbody id="tbody">
+                 
+                </tbody>
+                <br>
+                <tr colspan="6"><h1 id="count" style="color: rgb(216, 170, 170);;" ></h1></tr>
+                
+            </table>
+        </div>
+    </div>
+    <script src="javaScript.js"></script>
+</body>
+
+</html>

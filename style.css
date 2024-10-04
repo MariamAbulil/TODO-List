@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui;
+    font-weight: bold;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head,.inputs,.outputs{
+    text-align: center;
+    font-weight: bold;
+    
+    
+}
+#btn{
+    background-color: rgb(236, 203, 203);
+    transition: .5s;
+}
+#btn:hover{
+    letter-spacing: 4px;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+#add,#btn{
+    margin: 10px;
+    border-radius: 4px;
+    padding: 5px;
+}
+.search{
+    width: 50%;
+    border-radius: 4px ;
+    padding: 5px;
+}
+
+input:focus{
+    background-color: rgb(236, 203, 203);
+    color: black;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+table{
+    width: 100%;
+    margin: 10px 0;
+    border-collapse: collapse;
+    
+}
+th,td{
+    padding: 10px;
+}
+
+.cover{
+    display: flex;
+    justify-content: space-between;
+}
+.cover input{
+    width: 20%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.firstLine{
+    background-color: gray !important;
+}
+tr{
+    border-bottom: 2px solid gray ;
+}

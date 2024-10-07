@@ -61,7 +61,7 @@ const showData = async (searchValue = '') => {
             </tr>
         `;
     });
-
+//new
     document.getElementById("tbody").innerHTML = table;
     document.getElementById('count').innerHTML = `Total Tasks : ${filteredData.length}`;
 }

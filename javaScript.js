@@ -29,7 +29,7 @@ btn.onclick = async () => {
         id: dataArr.length + 1,
         todo: desc.value,
         userId: userId.value,
-        completed: status1.value.toLowerCase() === 'completed' ? 'completed' : 'pending'
+        status: status1.value.toLowerCase() === 'completed' ? 'completed' : 'pending'
     }
     dataArr.push(dataNew);
     localStorage.setItem('array', JSON.stringify(dataArr));
@@ -55,7 +55,7 @@ const showData = async (searchValue = '') => {
                 <td>${element.id}</td>
                 <td>${element.todo}</td>
                 <td>${element.userId}</td>
-                <td>${element.completed}</td>
+                <td>${element.status}</td>
                 <td><button onclick="deleteData(${element.id})" style="background-color: rgb(236, 203, 203); color: black; border-radius:4px; padding: 5px;">delete</button></td>
                 <td><button onclick="markAsDone(${element.id})" style="background-color: rgb(180, 241, 180); color: black; border-radius:4px; padding: 5px;">Done</button></td>
             </tr>
@@ -75,7 +75,7 @@ const deleteData = (i) => {
 }
 
 const markAsDone = (id) => {
-    dataArr = dataArr.map(item => (item.id === id ? { ...item, completed: 'completed' } : item));
+    dataArr = dataArr.map(item => (item.id === id ? { ...item, status: 'completed' } : item));
     localStorage.setItem("array", JSON.stringify(dataArr));
     showData();
 }
